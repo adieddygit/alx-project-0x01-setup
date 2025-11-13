@@ -1,5 +1,5 @@
 import Header from '@/components/layout/Header'
-const User: React.FC = ()=>{
+const Users: React.FC = ()=>{
     return (
         <div className="flex justify-center items-center">
             <h1></h1>
@@ -19,4 +19,4 @@ export async function getStaticProps(){
     }
 }
 
-export default User
+export default Users;

@@ -65,7 +65,7 @@ export interface UserData {
   };
 }
 
-export interface UserProps{
+export interface UserData{
     onClose: ()=> void;
     onSubmit: (post: UserProps)=>void
 }

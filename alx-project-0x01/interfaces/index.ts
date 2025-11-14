@@ -3,6 +3,7 @@ export interface PostProps {
     id: number;
     title: string;
     body: string;
+    onSubmit: (post: UserProps)=>void;
 };
 
 export interface UserProps {
@@ -27,6 +28,7 @@ export interface UserProps {
     catchPhrase: string;
     bs: string;
   };
+  onSubmit: (post: UserProps)=>void;
 }
 
 export interface PostData {
@@ -64,6 +66,7 @@ export interface UserData {
     catchPhrase: string;
     bs: string;
   };
+  onSubmit: (post: UserProps)=>void;
 }
 
 // export interface User{
@@ -74,5 +77,4 @@ export interface UserData {
 export interface UserModalProps {
     onClose: ()=> void;
     onSubmit: (user:UserData) => void;
-
 }
